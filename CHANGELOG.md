@@ -1,5 +1,13 @@
 本模组的版本变更记录，按版本倒序。安装包见 [Releases](../../releases)。
 
+## 0.1.1
+
+- **修复启动期 Mixin 注入失败**：`@ModifyArg` 的处理器改回 `static`
+  - 报错原文：`@ModifyArg handler before super() invocation must be static`
+  - 注入点在构造器的 `super()` 之前，此时实例尚未建立，Mixin 不允许实例方法处理器；
+    而 `customworld.mixins.json` 是 `required: true`，注入失败会直接拦在启动阶段
+- 版本号推进，功能与 0.1.0 一致
+
 ## 0.1.0
 
 - 首个版本：在「创建世界」界面左下角加入「地形设置」入口

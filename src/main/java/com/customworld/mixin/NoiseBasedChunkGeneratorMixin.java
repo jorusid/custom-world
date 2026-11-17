@@ -15,14 +15,16 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 @Mixin(NoiseBasedChunkGenerator.class)
 public class NoiseBasedChunkGeneratorMixin {
 	/**
-	 * 注意：目标是<b>非静态构造器</b>，因此处理器必须是实例方法（写成 static 会在运行时注入失败，
-	 * 而 mixins.json 是 {@code required: true}，那会把游戏直接拦在启动阶段）。
+	 * 注意：注入点在<b>构造器的 super() 之前</b>，此时实例还没建立，Mixin 强制要求处理器是
+	 * {@code static}；写成实例方法会在运行时抛
+	 * {@code InvalidInjectionException: @ModifyArg handler before super() invocation must be static}，
+	 * 而 mixins.json 是 {@code required: true}，那会把游戏直接拦在启动阶段。
 	 */
 	@ModifyArg(
 			method = "<init>",
 			at = @At("HEAD"),
 			index = 1)
-	private Holder<NoiseGeneratorSettings> customworld_adjustSettings(
+	private static Holder<NoiseGeneratorSettings> customworld_adjustSettings(
 			Holder<NoiseGeneratorSettings> settings) {
 		return WorldGenApplier.adjust(settings);
 	}
