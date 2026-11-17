@@ -1,0 +1,22 @@
+{
+	"customworld.terrain.title": "Terrain Settings",
+	"customworld.terrain.heading": "World Generation · Terrain Parameters",
+	"customworld.terrain.entry": "Terrain Settings",
+	"customworld.terrain.done": "Done",
+	"customworld.terrain.hint": "Values may go beyond vanilla limits; \"Vanilla\" means that entry is untouched",
+	"customworld.terrain.vanilla": "Vanilla",
+	"customworld.terrain.dimension.overworld": "Overworld",
+	"customworld.terrain.dimension.nether": "Nether",
+	"customworld.terrain.dimension.end": "The End",
+	"customworld.terrain.enabled.on": "Take over this dimension: ON",
+	"customworld.terrain.enabled.off": "Take over this dimension: OFF",
+	"customworld.terrain.seaLevel": "Sea level",
+	"customworld.terrain.noiseH": "Noise cell width",
+	"customworld.terrain.noiseV": "Noise cell height",
+	"customworld.terrain.mobs.on": "Disable mob generation: ON",
+	"customworld.terrain.mobs.off": "Disable mob generation: OFF",
+	"customworld.terrain.aquifers.on": "Disable aquifers: ON",
+	"customworld.terrain.aquifers.off": "Disable aquifers: OFF",
+	"customworld.terrain.oreVeins.on": "Disable ore veins: ON",
+	"customworld.terrain.oreVeins.off": "Disable ore veins: OFF"
+}

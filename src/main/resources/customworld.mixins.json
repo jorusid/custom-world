@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.customworld.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"NoiseBasedChunkGeneratorMixin"
+	],
+	"client": [
+		"CreateWorldScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"customworld.terrain.title": "地形设置",
+	"customworld.terrain.heading": "世界生成 · 地形参数",
+	"customworld.terrain.entry": "地形设置",
+	"customworld.terrain.done": "完成",
+	"customworld.terrain.hint": "数值可超出原版范围；显示「原版」表示该项不干预",
+	"customworld.terrain.vanilla": "原版",
+	"customworld.terrain.dimension.overworld": "主世界",
+	"customworld.terrain.dimension.nether": "下界",
+	"customworld.terrain.dimension.end": "末地",
+	"customworld.terrain.enabled.on": "接管本维度：开",
+	"customworld.terrain.enabled.off": "接管本维度：关",
+	"customworld.terrain.seaLevel": "海平面",
+	"customworld.terrain.noiseH": "噪声水平网格",
+	"customworld.terrain.noiseV": "噪声垂直网格",
+	"customworld.terrain.mobs.on": "禁用怪物生成：开",
+	"customworld.terrain.mobs.off": "禁用怪物生成：关",
+	"customworld.terrain.aquifers.on": "关闭含水层：开",
+	"customworld.terrain.aquifers.off": "关闭含水层：关",
+	"customworld.terrain.oreVeins.on": "关闭矿脉：开",
+	"customworld.terrain.oreVeins.off": "关闭矿脉：关"
+}

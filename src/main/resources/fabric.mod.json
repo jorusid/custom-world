@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "customworld",
+	"version": "${version}",
+	"name": "Custom World 自定义世界生成",
+	"description": "Adjust world generation parameters for the Overworld, the Nether and the End — automatically disabled in multiplayer.",
+	"authors": [
+		"dhzjs"
+	],
+	"license": "All Rights Reserved",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.customworld.CustomWorldClient"
+		],
+		"main": [
+			"com.customworld.CustomWorld"
+		]
+	},
+	"mixins": [
+		{
+			"config": "customworld.mixins.json"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "26.2",
+		"java": ">=25"
+	}
+}
