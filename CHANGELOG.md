@@ -1,5 +1,13 @@
 本模组的版本变更记录，按版本倒序。安装包见 [Releases](../../releases)。
 
+## 0.1.2
+
+- **换掉注入方式**：`@ModifyArg` → `@ModifyVariable(argsOnly = true, index = 2)`
+  - 0.1.1 的报错：`@ModifyArg annotation on is targetting a non-method insn`
+  - 真因：该构造器第一条指令是 `aload_0`，`@ModifyArg` 必须挂在方法调用上，`HEAD` 处挂不住
+  - 现在直接改第二个参数的局部变量槽（0=this，1=BiomeSource，2=Holder），不再要求方法调用点
+- 参数仍作用于构造器，覆盖 `createNoiseChunk` / `getSeaLevel` / `createFluidPicker` 全部读字段的路径
+
 ## 0.1.1
 
 - **修复启动期 Mixin 注入失败**：`@ModifyArg` 的处理器改回 `static`
